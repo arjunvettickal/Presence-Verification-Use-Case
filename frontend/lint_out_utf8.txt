@@ -1,0 +1,44 @@
+﻿
+C:\Users\vetti\Desktop\DocX\Academics\Thesis\Workflow\Use case\PresenceVerificationApp\frontend\src\components\DetectionView.jsx
+  6:12  error  'image' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+C:\Users\vetti\Desktop\DocX\Academics\Thesis\Workflow\Use case\PresenceVerificationApp\frontend\src\components\HistoryLog.jsx
+  8:9  error  Error: Cannot access variable before it is declared
+
+`fetchLogs` is accessed before it is declared, which prevents the earlier access from updating when this value changes over time.
+
+   6 |
+   7 |     useEffect(() => {
+>  8 |         fetchLogs();
+     |         ^^^^^^^^^ `fetchLogs` accessed before it is declared
+   9 |     }, []);
+  10 |
+  11 |     const fetchLogs = async () => {
+
+   9 |     }, []);
+  10 |
+> 11 |     const fetchLogs = async () => {
+     |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 12 |         try {
+     | ^^^^^^^^^^^^^
+> 13 |             const res = await axios.get('http://localhost:8000/logs');
+     | ^^^^^^^^^^^^^
+> 14 |             setLogs(res.data);
+     | ^^^^^^^^^^^^^
+> 15 |         } catch (err) {
+     | ^^^^^^^^^^^^^
+> 16 |             console.error(err);
+     | ^^^^^^^^^^^^^
+> 17 |         }
+     | ^^^^^^^^^^^^^
+> 18 |     };
+     | ^^^^^^^ `fetchLogs` is declared here
+  19 |
+  20 |     return (
+  21 |         <div className="bg-white p-4 rounded shadow mt-8">  react-hooks/immutability
+
+C:\Users\vetti\Desktop\DocX\Academics\Thesis\Workflow\Use case\PresenceVerificationApp\frontend\src\components\ModelSelector.jsx
+  18:8  warning  React Hook useEffect has a missing dependency: 'onSelect'. Either include it or remove the dependency array. If 'onSelect' changes too often, find the parent component that defines it and wrap that definition in useCallback  react-hooks/exhaustive-deps
+
+Ô£û 3 problems (2 errors, 1 warning)
+
