@@ -1,5 +1,5 @@
 # Part Presence Verification System
-
+![System Overview](Presence%20verification.png)
 An industrial order verification system that ensures the correct parts and quantities are present in a given scene (or order batch) using computer vision.
 
 This project consists of a **FastAPI backend** running YOLOv8 object detection models and a **React + Vite frontend** that provides an intuitive interface for order creation, model selection, camera capture, and result analysis.
