@@ -93,12 +93,12 @@ npm run dev
 To use your own trained YOLOv8 models, update the MODELS dictionary in backend/config.py with the names and absolute paths to your .pt model weights. You can also modify the VALID_PARTS list to match the classes your model was trained on.
 ##  Usage
 
-    Select Model: Choose the desired YOLOv8 model from the dropdown.
+Select Model: Choose the desired YOLOv8 model from the dropdown.
 
-    Advanced Settings: Adjust the image size, confidence threshold, and IoU threshold if necessary.
+Advanced Settings: Adjust the image size, confidence threshold, and IoU threshold if necessary.
 
-    Create Order: Specify the quantities for the parts that should be present.
+Create Order: Specify the quantities for the parts that should be present.
 
-    Detect Scene: Upload an image or use the camera to capture a picture of the parts.
+Detect Scene: Upload an image or use the camera to capture a picture of the parts.
 
-    Review Results: The application will process the image and indicate if the order is Verified, Incomplete, or contains Excess parts, along with a visual bounding box overlay.
+Review Results: The application will process the image and indicate if the order is Verified, Incomplete, or contains Excess parts, along with a visual bounding box overlay.
