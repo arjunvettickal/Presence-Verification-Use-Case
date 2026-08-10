@@ -1,4 +1,4 @@
-# Part Presence Verification System
+# Parts Presence Verification System
 ![System Overview](Presence%20verification.png)
 An industrial order verification system that ensures the correct parts and quantities are present in a given scene (or order batch) using computer vision.
 
